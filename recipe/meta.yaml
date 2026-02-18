@@ -1,5 +1,5 @@
 {% set name = "algorithms" %}
-{% set version = "0.1.4" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/algorithms-{{ version }}.tar.gz
-  sha256: ccd05e13d4ad169b0061028b16b16e7f67e884d237a8bbff13b354ee5d31f34c
+  sha256: e2d140bc315eb1e106f2ab8c1f2ec595e01cb1ef0aa1506d20f93f75cf9fd8b1
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
